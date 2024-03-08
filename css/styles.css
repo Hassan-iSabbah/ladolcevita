@@ -46,7 +46,6 @@ body{
 
 body::after{
     content: '';
-    background-color: #10023c;
     z-index: 0;
     position: absolute;
     top: 0;
@@ -158,8 +157,14 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'bold';
+    font-family: 'normal';
 }
+
+.cursive{
+    font-family: 'bold';
+
+}
+
 
 button,li,a {
     color: white;
@@ -196,7 +201,15 @@ p{
   }
 
 
+  #footer {
+    min-height: 35vh;
+    width: 100vw;
+  }
   #footer svg{
     width: 32px;
     height: 32px;
   }
+  
+.hide{
+    display: none;
+}
