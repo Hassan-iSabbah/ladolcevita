@@ -36,11 +36,55 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid p-5 bg-secondary">
+    <div class="container-fluid p-5 bg-secondary align-items-center justify-contents-between text-center">
         <div class="row m-5"></div>
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Bookings are Coming soon</h1>
+        <div class="row align-items-center justify-contents-center">
+            <div class="col-md-5 align-items-center justify-contents-center">
+                <h2>LaDocLevita Record Booking Form</h2>
+        <form action="your_server_script.php" method="post">
+            <!-- Replace "your_server_script.php" with the actual server-side script to handle form submissions -->
+
+            <!-- Artist Information -->
+            <div class="mb-3">
+                <label for="artistName" class="form-label">Artist Name</label>
+                <input type="text" class="form-control" id="artistName" name="artistName" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="contactPerson" class="form-label">Contact Person</label>
+                <input type="text" class="form-control" id="contactPerson" name="contactPerson" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" name="phone" required>
+            </div>
+
+            <!-- Booking Details -->
+            <div class="mb-3">
+                <label for="eventDate" class="form-label">Event Date</label>
+                <input type="date" class="form-control" id="eventDate" name="eventDate" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="eventDetails" class="form-label">Event Details</label>
+                <textarea class="form-control" id="eventDetails" name="eventDetails" rows="4" required></textarea>
+            </div>
+
+            <!-- Additional Information -->
+            <div class="mb-3">
+                <label for="additionalInfo" class="form-label">Additional Information</label>
+                <textarea class="form-control" id="additionalInfo" name="additionalInfo" rows="4"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary">Submit Booking</button>
+        </form>
             </div>
         </div>
     </div>
