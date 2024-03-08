@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Vinyl Studios</title>
+    <title>La Docle Vita Records</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
 </head>
 
 <body class="bg-secondary">
+
     <!-- Navbar -->
-    <nav id="navbar" class="navbar navbar-expand-lg py-3 fixed-top">
+    <nav id="navbar" class="navbar navbar-expand-lg py-3 fixed-top hide">
         <div class="container">
             <div>
-                <a href="#" class="navbar-brand text-light">La Docle Vita Records</a>
+                <a href="index.html#" class="navbar-brand text-light cursive">La Docle Vita Records</a>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <button id="btnNavbarToggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navmenu">
@@ -39,7 +41,7 @@
     <div class="container-fluid align-items-center text-center justify-content-center p-5 my-5">
 
         <div class="row">
-            <div class="col-md-6 offset-md-2 d-flex">
+            <div class="col-md-6">
                 <div class="card text-bg-light m-3" style="max-width: 18rem;">
                     <div class="card-header">Header</div>
                     <div class="card-body">
@@ -49,6 +51,8 @@
                             card's content.</p>
                     </div>
                 </div>
+            </div>
+            <div class="col-md-6">
                 <div class="card text-bg-dark m-3" style="max-width: 18rem;">
                     <div class="card-header">Header</div>
                     <div class="card-body">
@@ -58,6 +62,8 @@
                             card's content.</p>
                     </div>
                 </div>
+            </div>
+            <div class="col-md-6">
                 <div class="card border-success m-3" style="max-width: 18rem;">
                     <div class="card-header bg-transparent border-success">Header</div>
                     <div class="card-body text-success">
@@ -68,12 +74,11 @@
                     </div>
                     <div class="card-footer bg-transparent border-success">Footer</div>
                 </div>
-
             </div>
 
         </div>
         <div class="row">
-            <div class="col-md-6 offset-md-3 d-flex">
+            <div class="col-md-6">
                 <div class="card text-bg-light m-3" style="max-width: 18rem;">
                     <div class="card-header">Header</div>
                     <div class="card-body">
@@ -83,6 +88,8 @@
                             card's content.</p>
                     </div>
                 </div>
+            </div>
+            <div class="col-md-6">
                 <div class="card text-bg-dark m-3" style="max-width: 18rem;">
                     <div class="card-header">Header</div>
                     <div class="card-body">
@@ -92,6 +99,8 @@
                             card's content.</p>
                     </div>
                 </div>
+            </div>
+            <div class="col-md-6">
                 <div class="card border-success m-3" style="max-width: 18rem;">
                     <div class="card-header bg-transparent border-success">Header</div>
                     <div class="card-body text-success">
@@ -102,12 +111,62 @@
                     </div>
                     <div class="card-footer bg-transparent border-success">Footer</div>
                 </div>
+            </div>
+
+
+
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card text-bg-light m-3" style="max-width: 18rem;">
+                        <div class="card-header">Header</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Light card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the
+                                card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card text-bg-dark m-3" style="max-width: 18rem;">
+                        <div class="card-header">Header</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Dark card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the
+                                card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card border-success m-3" style="max-width: 18rem;">
+                        <div class="card-header bg-transparent border-success">Header</div>
+                        <div class="card-body text-success">
+                            <h5 class="card-title">Success card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the
+                                card's content.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-success">Footer</div>
+                    </div>
+                </div>
+
+
+
+
 
             </div>
 
         </div>
+
         <div class="row">
-            <div class="col-md-6 offset-md-1 d-flex">
+            <div class="col-md-6">
                 <div class="card text-bg-light m-3" style="max-width: 18rem;">
                     <div class="card-header">Header</div>
                     <div class="card-body">
@@ -117,6 +176,8 @@
                             card's content.</p>
                     </div>
                 </div>
+            </div>
+            <div class="col-md-6">
                 <div class="card text-bg-dark m-3" style="max-width: 18rem;">
                     <div class="card-header">Header</div>
                     <div class="card-body">
@@ -126,6 +187,8 @@
                             card's content.</p>
                     </div>
                 </div>
+            </div>
+            <div class="col-md-6">
                 <div class="card border-success m-3" style="max-width: 18rem;">
                     <div class="card-header bg-transparent border-success">Header</div>
                     <div class="card-body text-success">
@@ -136,47 +199,32 @@
                     </div>
                     <div class="card-footer bg-transparent border-success">Footer</div>
                 </div>
-
             </div>
 
-        </div>
 
-        <div class="row">
-            <div class="col-md-6 offset-md-4 d-flex">
-                <div class="card text-bg-light m-3" style="max-width: 18rem;">
-                    <div class="card-header">Header</div>
-                    <div class="card-body">
-                        <h5 class="card-title">Light card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                    </div>
-                </div>
-                <div class="card text-bg-dark m-3" style="max-width: 18rem;">
-                    <div class="card-header">Header</div>
-                    <div class="card-body">
-                        <h5 class="card-title">Dark card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                    </div>
-                </div>
-                <div class="card border-success m-3" style="max-width: 18rem;">
-                    <div class="card-header bg-transparent border-success">Header</div>
-                    <div class="card-body text-success">
-                        <h5 class="card-title">Success card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                    </div>
-                    <div class="card-footer bg-transparent border-success">Footer</div>
-                </div>
-
-            </div>
 
         </div>
     </div>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>  
+
+    <script>
+        $(document).ready(function () {
+            $("#navbar").fadeToggle(4000);
+            setTimeout(() => {
+                $("#spanWinter").slideToggle(400);
+
+            }, 900);
+            setTimeout(() => {
+                $("#hLabel").toggle(600);
+
+            }, 1200);
+
+
+            $("#btnNavbarToggler").click(function () {
+                $("#navmenu").toggle(300);
+            })
+        })
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
