@@ -232,3 +232,9 @@ p{
 .crossOut{
     text-decoration: line-through;
 }
+
+.btnNavbarToggler{
+    position: fixed;
+    top: 5vh;
+    right: 0;
+}
