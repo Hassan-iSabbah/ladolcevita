@@ -8,6 +8,21 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>La Dolce Vita Records</title>
     <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+            $(document).ready(function() {
+      $(window).scroll(function() {
+        // Calculate the percentage scrolled
+        var scrollPercentage = (($(window).scrollTop() / ($(document).height() - $(window).height())) * 100);
+
+        // Check if the user has scrolled more than 20%
+        if (scrollPercentage > 20) {
+          $("#navbar").hide(400);
+        } else {
+          $("#navbar").show(400);
+        }
+      });
+    });
+    </script>
 </head>
 
 <body class="bg-secondary">
