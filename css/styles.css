@@ -213,3 +213,22 @@ p{
 .hide{
     display: none;
 }
+
+.artist{
+    filter: brightness(60%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2%;
+    max-width: 50vw;
+    max-height: 50vh;
+}
+
+.video{
+    max-width: 80vw;
+    max-height: 100vh;
+}
+
+.crossOut{
+    text-decoration: line-through;
+}
