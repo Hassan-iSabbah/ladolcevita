@@ -236,7 +236,7 @@ p{
 #btnNavbarToggler{
     position: fixed;
     top: 5vh;
-    right: 5vw;
+    right: 10vw;
 }
 
 #navbar{
