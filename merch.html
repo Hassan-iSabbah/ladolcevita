@@ -9,19 +9,19 @@
     <title>La Dolce Vita Records</title>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script>
-            $(document).ready(function() {
-      $(window).scroll(function() {
-        // Calculate the percentage scrolled
-        var scrollPercentage = (($(window).scrollTop() / ($(document).height() - $(window).height())) * 100);
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                // Calculate the percentage scrolled
+                var scrollPercentage = (($(window).scrollTop() / ($(document).height() - $(window).height())) * 100);
 
-        // Check if the user has scrolled more than 20%
-        if (scrollPercentage > 20) {
-          $("#navbar").hide(400);
-        } else {
-          $("#navbar").show(400);
-        }
-      });
-    });
+                // Check if the user has scrolled more than 20%
+                if (scrollPercentage > 20) {
+                    $("#navbar").hide(400);
+                } else {
+                    $("#navbar").show(400);
+                }
+            });
+        });
     </script>
 </head>
 
@@ -35,7 +35,8 @@
                     <img src="img/watermark.png" alt="" class="img-fluid w-50">
                 </a>
             </div>
-            <button id="btnNavbarToggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <button id="btnNavbarToggler" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navmenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navmenu">
@@ -55,17 +56,43 @@
         </div>
     </nav>
     <!-- PRODUCTS -->
-    <div class="container p-5 m-5">
+    <div class="container-fluid">
+        <div class="row p-5">
+            
+        </div>
+        <div class="row p-5">
+            
+        </div>
+        <div class="row p-5">
+            
+        </div>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12 text-center">
                 <h1 class="display-1">
-                    Get your own dogtags! Place an order to our whatsapp 062 955 4913
+                    Exclusive hoodies | R300 | Place an order to our whatsapp 062 955 4913
                 </h1>
-                <img src="img/og.jpeg" alt="">
+                <img src="img/hoodies.jpeg" class="img-fluid" alt="">
+            </div>
+        </div>
+        <div class="row p-5">
+            
+        </div>
+        <div class="row p-5">
+            
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="display-2">
+                    Best Sales Coming this Winter (9/40 stock left)
+                </h1>
+                <h1 class="display-3">
+                    Get your own dogtags | R1.2k | Place an order to our whatsapp 062 955 4913
+                </h1>
+                <img src="img/solidDogs.jpeg"  class="img-fluid" alt="">
             </div>
         </div>
     </div>
-<!--     <div class="container-fluid align-items-center text-center justify-content-center p-5 my-5">
+    <!--     <div class="container-fluid align-items-center text-center justify-content-center p-5 my-5">
 
         <div class="row">
             <div class="col-md-4">
