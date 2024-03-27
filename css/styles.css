@@ -32,11 +32,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: white;
     font-family: 'normal';
 }
 
-body{    
+body {
     min-height: 100vh;
     position: relative;
     font-size: 1.6rem;
@@ -44,7 +43,7 @@ body{
     letter-spacing: 2.6px;
 }
 
-body::after{
+body::after {
     content: '';
     z-index: 0;
     position: absolute;
@@ -75,6 +74,7 @@ body::after{
     filter: brightness(40%);
     z-index: -1;
 }
+
 #aboutus {
     min-height: 50vh;
     position: relative;
@@ -117,8 +117,8 @@ body::after{
     z-index: -1;
 }
 
-#article img{
-    border-radius: 47% 53% 70% 30% / 30% 58% 42% 70% ;
+#article img {
+    border-radius: 47% 53% 70% 30% / 30% 58% 42% 70%;
 }
 
 
@@ -143,7 +143,7 @@ body::after{
     z-index: -1;
 }
 
-#artist_one iframe{
+#artist_one iframe {
     width: 100%;
     height: 28vh;
 }
@@ -160,13 +160,15 @@ h6 {
     font-family: 'normal';
 }
 
-.cursive{
+.cursive {
     font-family: 'bold';
 
 }
 
 
-button,li,a {
+button,
+li,
+a {
     color: white;
     text-decoration: none;
     list-style: none;
@@ -178,43 +180,38 @@ form {
     font-family: 'form';
 }
 
-p{
+p {
     font-family: 'p';
 }
 
 /* scrollbar */
 ::-webkit-scrollbar {
     width: 20px;
-  }
-  
-  ::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-track {
     background: #770606;
-  }
-  
-  ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb {
     background: #888;
     border-radius: 12%;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
+}
+
+::-webkit-scrollbar-thumb:hover {
     background: #555;
-  }
+}
 
-
-  #footer {
-    min-height: 35vh;
-    width: 100vw;
-  }
-  #footer svg{
+#footer svg {
     width: 32px;
     height: 32px;
-  }
-  
-.hide{
+}
+
+.hide {
     display: none;
 }
 
-.artist{
+.artist {
     filter: brightness(60%);
     background-repeat: no-repeat;
     background-size: cover;
@@ -224,26 +221,26 @@ p{
     max-height: 50vh;
 }
 
-.video{
+.video {
     max-width: 80vw;
     max-height: 100vh;
 }
 
-.crossOut{
+.crossOut {
     text-decoration: line-through;
 }
 
-#btnNavbarToggler{
+#btnNavbarToggler {
     position: fixed;
     top: 5vh;
     right: 10vw;
 }
 
-#navbar{
+#navbar {
     position: fixed;
 }
 
-#navbar::after{
+#navbar::after {
     content: '';
     z-index: -1;
     position: absolute;
@@ -268,3 +265,76 @@ p{
         border-radius: 47% 53% 70% 30% / 30% 58% 42% 70%;
     }
 }
+
+.socialBlock{
+    max-width: 50px;
+}
+
+.socialBlock:hover{
+    scale: 1.2 ;
+}
+
+/* Crop Bad Images */
+
+.cropHoodie{
+    background-clip: content-box;
+    background-position: center;
+    object-fit: cover;
+    width: 30vw;
+    height: 60vh;
+}
+
+
+/* EGG */
+
+.egg {
+    border-radius: 47% 53% 70% 30% / 30% 58% 42% 70%;
+    animation: borderAnimation 12s infinite; /* Duration: 12 seconds (6 keyframes * 2 seconds each) */
+    animation-timing-function: ease-in-out; /* Smooth animation */
+    transform: scale(1.02); /* Initial zoom */
+  }
+  
+  .egg-0 {
+    border-radius: 47% 53% 70% 30% / 30% 58% 42% 70%;
+    animation: borderAnimation 6s infinite; /* Duration: 12 seconds (6 keyframes * 2 seconds each) */
+    animation-timing-function: ease-in-out; /* Smooth animation */
+    transform: scale(1.02); /* Initial zoom */
+  }
+
+  .egg-1 {
+    border-radius: 47% 53% 70% 30% / 30% 58% 42% 70%;
+    animation: borderAnimation 18s infinite; /* Duration: 12 seconds (6 keyframes * 2 seconds each) */
+    animation-timing-function: ease-in-out; /* Smooth animation */
+    transform: scale(1.02); /* Initial zoom */
+  }
+
+  @keyframes borderAnimation {
+    0% {
+      border-radius: 47% 53% 70% 30% / 30% 58% 42% 70%;
+      transform: scale(1.02) rotate(0deg); /* Initial zoom and no rotation */
+    }
+    16.66% {
+      border-radius: 54% 46% 80% 20% / 20% 63% 37% 80%;
+      transform: scale(1.02) rotate(2deg); /* Rotate slightly */
+    }
+    33.33% {
+      border-radius: 65% 35% 82% 18% / 36% 70% 30% 64%;
+      transform: scale(1.02) rotate(-2deg); /* Rotate slightly */
+    }
+    50% {
+      border-radius: 27% 73% 90% 10% / 19% 83% 17% 81%;
+      transform: scale(1.02) rotate(1deg); /* Rotate slightly */
+    }
+    66.66% {
+      border-radius: 93% 7% 95% 5% / 7% 94% 6% 93%;
+      transform: scale(1.02) rotate(-1deg); /* Rotate slightly */
+    }
+    83.33% {
+      border-radius: 100% 0% 100% 0% / 0% 100% 0% 100%;
+      transform: scale(1.02) rotate(0deg); /* Back to no rotation */
+    }
+    100% {
+      border-radius: 47% 53% 70% 30% / 30% 58% 42% 70%; /* Back to the start */
+      transform: scale(1.02) rotate(0deg); /* Back to no rotation */
+    }
+  }
