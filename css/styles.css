@@ -255,13 +255,16 @@ p{
     filter: blur(2px);
 }
 
-.steps{
-    position: relative;
-}
+/* For medium and larger devices */
+@media (min-width: 800px) {
+    .steps {
+        position: relative;
+    }
 
-.steps .container{
-    position: absolute;
-    padding-bottom: 00vh;
-    z-index: 11;
-    border-radius: 47% 53% 70% 30% / 30% 58% 42% 70% ;
+    .steps .container {
+        position: absolute;
+        padding-bottom: -5vh;
+        z-index: 11;
+        border-radius: 47% 53% 70% 30% / 30% 58% 42% 70%;
+    }
 }
